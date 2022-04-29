@@ -61,3 +61,23 @@ class Line:
     def mutlen(self,newlen):
         self.__length = newlen
         return None
+    def getpoint(self):
+        return self.__points
+    def getlen(self):
+        return self.__length
+
+class NoLengthLine:
+    def __init__(self,points=["A","B"]):
+        self.__points = points
+        return None
+    def __str__(self):
+        return f"NoLengthLine object at {self.__points}"
+    def mutpoints(self,newpoints):
+        self.__points = newpoints
+        return None
+    def getpoints(self):
+        return self.__points
+    def __eq__(self,l):
+        return self.__points == l.__points
+    def __ne__(self,l):
+        return self.__points != l.__points

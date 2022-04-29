@@ -4,7 +4,7 @@
 ## Basic usage
 * To initialize a "Line",or **LENGTHED** line,use this:
 ```python
->>>import line
+>>>import lines
 >>>a = line.Line(10)
 ```
 * Good.You initialized a line.Now you should use it for other purposes:
@@ -42,3 +42,23 @@
 ['A','B']
 ```
 * Points are set to default "\["A","B"]".
+### NoLengthLine
+* You can create a line with an infinity length(in chinese,"直线".)
+* Do this by:
+```python
+>>>import lines
+>>>c = lines.NoLengthLine()
+```
+#### NoLengthLineAdvancedOptions
+* NoLengthLine accept a list as "points".
+```python
+>>>d = lines.NoLengthLine(["A","B"])
+```
+* You can mutate & get points like:
+```python
+>>>d.getpoints()
+["A","B"]
+>>>d.mutpoints(["C","D"])
+>>>d.getpoints()
+["C","D"]
+```

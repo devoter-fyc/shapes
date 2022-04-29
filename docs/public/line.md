@@ -15,3 +15,9 @@
 10
 ```
 * You could use either len(x) or x.len() to get the length.
+* Another way of getting length is also supported:
+```python
+>>>a.getlen()
+10
+```
+* However,this is not favoured by the author and **WILL** be deprecated in the future.

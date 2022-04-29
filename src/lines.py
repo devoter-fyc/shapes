@@ -55,4 +55,9 @@ class Line:
         return self.__length
     def len(self):
         return self.__length
-    
+    def mutpoint(self,newpst,newpend):
+        self.__points = [newpst,newpend]
+        return None
+    def mutlen(self,newlen):
+        self.__length = newlen
+        return None

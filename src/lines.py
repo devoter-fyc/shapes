@@ -30,3 +30,7 @@ class Line:
         return None
     __mod__ = __mul__
     __divmod__ = __mul__
+    __and__ = __mul__
+    __or__ = __mul__
+    __xor__ = __mul__
+    __neg__ = __mul__

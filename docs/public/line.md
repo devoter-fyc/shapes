@@ -21,3 +21,24 @@
 10
 ```
 * However,this is not favoured by the author and **WILL** be deprecated in the future.
+* This is the whole basic use.
+## Advanced
+* You can initialize the line with **TWO** and **ONLY TWO** points:
+```python
+>>>b = line.Line(10,"Hi","Goodbye")
+```
+* Use x.getpoint() to get that:
+```python
+>>>b.getpoint()
+['Hi',"Goodbye']
+```
+* You can change the length and the points,respectively using x.mutlen() and x.mutpoint():
+```python
+>>>a.mutlen(1)
+>>>a.len()
+1
+>>>b.mutpoint("A","B")
+>>>b.getpoint()
+['A','B']
+```
+* Points are set to default "\["A","B"]".

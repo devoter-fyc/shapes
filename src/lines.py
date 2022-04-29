@@ -15,4 +15,18 @@ class Line:
         return self.__length <= l.__length
     def __ge__(self,l):
         return self.__length >= l.__length
-    def
+    def __add__(self,v):
+        self.__length += v
+        return None
+    def __sub__(self,v):
+        self.__length -= v
+        return None
+    def __int__(self):
+        return int(self.__length)
+    def __float__(self):
+        return float(self.__length)
+    def __mul__(self):
+        raise ValueError("Invalid operation")
+        return None
+    __mod__ = __mul__
+    __divmod__ = __mul__

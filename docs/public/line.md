@@ -30,7 +30,7 @@
 * Use x.getpoint() to get that:
 ```python
 >>>b.getpoint()
-['Hi',"Goodbye']
+['Hi','Goodbye']
 ```
 * You can change the length and the points,respectively using x.mutlen() and x.mutpoint():
 ```python

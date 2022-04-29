@@ -5,4 +5,6 @@ class Line:
         return None
     def __eq__(self,l):
         return self.__length == l.__length and self.__points == l.__points
-    def __ne__
+    def __ne__(self,l):
+        return self.__length != l.__length or self.__points != l.__points
+    def 

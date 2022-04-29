@@ -34,3 +34,14 @@ class Line:
     __or__ = __mul__
     __xor__ = __mul__
     __neg__ = __mul__
+    def __abs__(self):
+        return self.__length
+    def __str__(self):
+        return f"Line object at {self.__points} length {self.__length}"
+    __repr__ = __str__
+    def __index__(self):
+        return self.__length
+    def __call__(self):
+        print(self.__str__())
+        return 0
+    

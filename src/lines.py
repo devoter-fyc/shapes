@@ -13,3 +13,6 @@ class Line:
         return self.__length > l.__length
     def __le__(self,l):
         return self.__length <= l.__length
+    def __ge__(self,l):
+        return self.__length >= l.__length
+    def

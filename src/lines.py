@@ -44,4 +44,15 @@ class Line:
     def __call__(self):
         print(self.__str__())
         return 0
+    def __help__(self):
+        print("""Line object.
+        Usage:
+        Use this like an integer(except no '*','/','%' allowed)
+        NON PRODUCTION USE!
+        """)
+        return None
+    def __len__(self):
+        return self.__length
+    def len(self):
+        return self.__length
     

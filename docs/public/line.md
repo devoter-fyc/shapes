@@ -62,3 +62,16 @@
 >>>d.getpoints()
 ["C","D"]
 ```
+### Calculation
+* You can use "==" and "!=" on any Line or NoLengthLine object;
+* ">""<"">=""<=" can be used on Line objects;
+* "+""-" can be used on Line objects;
+* abs(),len(),int() and float() can be used on Line objects;
+* "\*" and "/" cannot be used on them.
+* "&""|" cannot be used on them.
+
+### Help
+* Get help like:
+```python
+x.__help__()
+```

@@ -1,8 +1,8 @@
 class Triangle:
-    def __init__(self,lengths:list,id:int = 1):
+    def __init__(self,lengths:list,_id:int = 1):
         self.__lengths = lengths
         self.__sides = 3
-        self.__id_hook = 1
+        self.__id_hook = _id
         return None
     def __str__(self):
         return f"Triangle object sides length {self.__sides}"

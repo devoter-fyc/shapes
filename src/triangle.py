@@ -17,3 +17,6 @@ class Triangle:
     def __ne__(self,t):
         return self.__lengths != t.__lengths or self.__id_hook != t.__id_hook
     __lt__ = __gt__ = __le__ = __ge__ = __add__
+    def mutlen(self,newlen:list):
+        self.__lengths = newlen
+        return None
